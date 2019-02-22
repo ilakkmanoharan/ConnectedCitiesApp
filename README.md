@@ -1,7 +1,5 @@
 # ConnectedCitiesApp
 
-ConnectedCitiesApp
-
 
 Readme
 
@@ -61,11 +59,11 @@ Example:
 
 cd /…………………/ConnectedCitiesApp
 
-2. If caan build the jar, use the following command:
+2. You can build the code using the following command:
 
 mvn clean package
 
-3. To execute the jar, use the following command:
+3.Run the app using the following command:
 
 ./mvnw spring-boot:run
       
