@@ -88,7 +88,7 @@ no
 
 Testing using swagger:
 
-When the app is running (using commands from 2.1)
+When the app is running (using the previous commands)
 
 Goto the following url to visit the api docs:
 
