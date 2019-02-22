@@ -29,42 +29,65 @@ Example:
 city.txt content is:
 
 Boston, New York
+
 Philadelphia, Newark
+
 Newark, Boston
+
 Trenton, Albany
  
 Assumption: There is only one possible path
  
 http://localhost:8080/connected?origin=Boston&destination=Newark
+
 Should return yes
+
 http://localhost:8080/connected?origin=Boston&destination=Philadelphia
+
 Should return yes
+
 http://localhost:8080/connected?origin=Philadelphia&destination=Albany
+
 Should return no
+
+
 How to execute and test this app?
+
 Commands to deploy the app:
-1.	Go the folder where this application is saved and change to the ConnectedCitiesApp directory as the current directory
+
+1. Go the folder where this application is saved and change to the ConnectedCitiesApp directory as the current directory
+
 Example:
-cd /…………………/Workspace/ConnectedCitiesApp
-2.	<Optional> If you wish to build the jar, use the following command:
+
+cd /…………………/ConnectedCitiesApp
+
+2. If caan build the jar, use the following command:
+
 mvn clean package
-3.	   To execute the jar, use the following command:
+
+3. To execute the jar, use the following command:
+
 ./mvnw spring-boot:run
       
 Testing:
+
 Type in the following url and observe the results:
 
- http://localhost:8080/connected?origin=Boston&destination=Newark            
+ http://localhost:8080/connected?origin=Boston&destination=Newark
+ 
 yes
 
 http://localhost:8080/connected?origin=Boston&destination=Philadelphia
+
 yes
 
 http://localhost:8080/connected?origin=Philadelphia&destination=Albany
+
 no
 
 
 Testing using swagger:
+
 When the app is running (using commands from 2.1)
 
 Goto the following url to visit the api docs:
@@ -86,10 +109,19 @@ http://localhost:8080/swagger-ui.html
 
 
 Technical Specifications:
+
+
 Technology Stack:
+
 Maven, Spring boot, Java8, Junit5, Swagger2
+
+
 Graph Representation:
-The graph is represented using adjacency list. An adjacency list is an array of separate lists. Each element of the array is a list, which contains all the vertices that are adjacent to vertex i. Size of array will be number of vertices in graph.
+
+The graph is represented using adjacency list. An adjacency list is an array of separate lists. 
+
+Each element of the array is a list, which contains all the vertices that are adjacent to vertex i. Size of array will be 
+number of vertices in graph.
 
 
 Example:
@@ -97,20 +129,33 @@ Example:
 Input:
 
 Boston, New York
+
 Philadelphia, Newark
+
 Newark, Boston
+
 Trenton, Albany
 
 The following example gives the representation of the cities (as given in the input) in the graph
+
 Cities and their ids:
+
 Boston:0
+
 Newark:1
+
 Albany:2
+
 Trenton:3
+
 New York:4
+
 Philadelphia:5
 
-Graph representation: Adjacency List showing the adjacent(connected) cities for each city
+
+Graph representation: 
+
+Adjacency List showing the adjacent(connected) cities for each city
 
 Adjacency list of vertex 0
 head -> 4 -> 1
