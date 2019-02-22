@@ -49,9 +49,9 @@ http://localhost:8080/connected?origin=Philadelphia&destination=Albany
 Should return no
 
 
-How to execute and test this app?
+How to run and test this app?
 
-Commands to deploy the app:
+Commands to run the app:
 
 1. Go the folder where this application is saved and change to the ConnectedCitiesApp directory as the current directory
 
@@ -177,7 +177,8 @@ Graph Search Algorithm:
 The following graph search algorithms are implemented in the Graph class:
 1.	Depth First Search (DFS) 
 2.	Breadth First Search (BFS)
-The DFS is the default one. 
+
+The DFS is implemented as the default approach. 
 The choice of the algorithm depends on the value of the connectedcities.graphsearch.algorithm property in the application.properties file. 
 
 Design Considerations:
@@ -202,5 +203,6 @@ And it is faster to add/delete a vertex.
 Generally, Adjacency matrix representation is well suited when the graph is expected to be dense and Adjacency lists representation is well suited when the graph is expected to be sparse.
 
 4.	In the City class, the instance variable Id is an Integer type and not an int. Because it is possible to check for null by using an Integer type.
+
 5.	The city pairs from the input file is stored in a set to avoid duplicate entries.
 
