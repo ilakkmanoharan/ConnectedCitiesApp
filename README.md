@@ -197,7 +197,7 @@ But it is always best practice to be specific about the HTTP method that will be
 
 
 3. Advantages of using Adjacency List over Adjacency Matrix:
-       The graph is represented as an Adjacency List. Adjacency list uses less memory when to compared to Adjacency matrix, there is a lot of eastage of memory especially if the matrix is sparse.
+       The graph is represented as an Adjacency List. Adjacency list uses less memory when to compared to Adjacency matrix, there is a lot of wastage of memory especially if the matrix is sparse.
 It is faster to iterate over all the edges in the Adjacency matrix as the adjacent vertices can be accessed directly.
 And it is faster to add/delete a vertex.
 Generally, Adjacency matrix representation is well suited when the graph is expected to be dense and Adjacency lists representation is well suited when the graph is expected to be sparse.
